@@ -11,6 +11,8 @@ package HW;
 
         @Override
         public void printP() {
-            System.out.println(this.firstName + "\n" +this.secondName +"\n" +this.id);
+            System.out.println("Имя "+this.firstName + "\n" +"Фамилия "+this.secondName +"\n" +"ID "+this.id);
         }
+
+
     }

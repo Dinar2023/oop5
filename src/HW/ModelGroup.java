@@ -16,10 +16,18 @@ public class ModelGroup {
        this.teacher.secondName = lastName;
        this.teacher.id = id;
    }
+   ModelTeacher getTeacher(){
+       return teacher;
+   }
     ArrayList <ModelStudent> students = new ArrayList<>();
    public void addStudent(String firstName, String lastName, Integer id) {
        students.add(new ModelStudent(firstName, lastName, id));
    }
+
+    ArrayList <ModelStudent> getStudents(){
+       return students;
+    }
+
 
 
 }
