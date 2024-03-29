@@ -12,10 +12,10 @@ public class ViewGroup {
     }
 
     public int getUserChoice() {
-        System.out.println("1. Добавить учебную группу");
+        System.out.println("1. Вывести состав учебной группы");
         System.out.println("2. Установить учителя в учебную группу");
         System.out.println("3. Добавить студента в учебную группу");
-        System.out.println("4. Вывести состав учебной группы");
+//        System.out.println("4. Добавить учебную группу");
         System.out.println("5. Выход");
         System.out.print("Выберите действие: ");
         return scanner.nextInt();

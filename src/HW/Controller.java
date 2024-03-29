@@ -19,7 +19,8 @@ public class Controller {
             int choice = viewGroup.getUserChoice();
             switch (choice) {
                 case 1:
-                    modelGroupServise.setGroup(modelGroup.getTeacher(), modelGroup.getStudents());
+                    viewGroup.printGroup(modelGroup.getTeacher(), modelGroup.getStudents());viewGroup.printGroup(modelGroup.getTeacher(), modelGroup.getStudents());
+
 
 
 
@@ -33,7 +34,8 @@ public class Controller {
                     modelGroup.addStudent(viewGroup.getStudentName(), viewGroup.getStudenSecondName(), viewGroup.getStudenID());
                     break;
                 case 4:
-                    viewGroup.printGroup(modelGroup.getTeacher(), modelGroup.getStudents());
+
+                    modelGroupServise.setGroup(modelGroup.getTeacher(), modelGroup.getStudents()); // Позже разобраться почему ошибка
                     break;
 
                 case 0:
